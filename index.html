@@ -3,17 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Business Card</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .business-card {
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        width: 300px;
+        overflow: hidden;
+        border: 2px solid bisque;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .profile-image {
+        width: 100%;
+        height: auto; /* Adjusted height for responsiveness */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .header {
+        background-color: rgb(248, 88, 24);
+        color: wheat;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 2px solid bisque;
+      }
+
+      .contact-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .name {
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .job-title {
+        font-size: 1em;
+        color: rgb(133, 123, 123);
+        margin-bottom: 10px;
+      }
+
+      .contact-details div {
+        margin-bottom: 5px;
+      }
+
+      .social-links {
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: rgb(241, 133, 32);
+      }
+    </style>
   </head>
   <body>
     <div class="business-card">
       <div class="header">Business Card</div>
       <div class="contact-info">
-        <img src="IMG_6897.jpg" alt="" />
+        <img class="profile-image" src="profile pic.jpg" alt="" />
         <div class="name">Pramodya Senadheera</div>
         <div class="job-title">Software Engineer</div>
         <div class="contact-details">
-          <div>Email:pramodyasenadheera@gmail.com</div>
+          <div>Email: pramodyasenadheera@gmail.com</div>
           <div>Phone: +94778823090</div>
           <div>Address: Ja-Ela</div>
         </div>
